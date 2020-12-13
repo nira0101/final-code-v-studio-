@@ -209,8 +209,7 @@ footer h2{
 .f2{
     margin: 3vw 0;
 }
-
-
+/*subpage*/
 
 @media only screen and (min-width: 768px){
     .logo{
@@ -418,5 +417,73 @@ footer h2{
     .fa-arrow-left:hover{
         color: var(--color-4);
     }
+    #onework .works-image{
+        width: 500px;
+        height: 500px;
+        margin:-4vw 20vw;
+    }
+    #onework .works-image a:hover{
+        filter: blur(0);
+    }
+    #onework .title{
+        margin: 5vw 38vw;
+        font-size: 20px;
+    }
+    #onework .work-template{
+        display: flex;
+        flex-direction: column;
+    }
+    #work-desc h2{
+        font-family: var(--primary-font);
+        font-size: 20px;
+    }
+    #work-desc p{
+        font-family: var(--secondary-font);
+        font-size: 15px;
+        font-weight: 600;
+        margin: 1vw 0;
+    }
+    #work-desc li a{
+        font-family: var(--secondary-font);
+        font-size: 15px;
+        font-weight: 600;
+    }
+    #work-desc li{
+        font-family: var(--secondary-font);
+        font-size: 15px;
+        font-weight: 600;
+    }
+    #work-desc figcaption{
+         font-family: var(--secondary-font);
+        font-size: 15px;
+        margin: -1vw 0;
+    }
+    #work-desc figure{
+        margin: 1vw;
+        width: 500px;
+       margin: 0 18vw;
+
+    }
+     #work-desc figure img{
+        margin: 1vw;
+         width: 500px;
+         margin: 2vw;
+
+
+    }
+    .wp-block-button{
+        margin: 1vw 37vw;
+
+        border: 2px solid black;
+        width: 5vw;
+
+    }
+    .wp-block-button a{
+        text-decoration: none;
+        font-family: var(--primary-font);
+        font-size: 13px;
+
+    }
+
 
 }
