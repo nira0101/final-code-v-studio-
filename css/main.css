@@ -1,0 +1,422 @@
+ @import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Open+Sans:wght@300&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Montserrat:wght@200&family=Open+Sans:wght@300&display=swap');
+
+ * {
+     box-sizing: border-box;
+     margin: 0;
+     padding: 0;
+
+ }
+
+ :root {
+     --primary-font: 'Julius Sans One', sans-serif;
+     --secondary-font: 'Montserrat', sans-serif;
+     --color1: #FFFF00;
+     --color2: #DCDCDC;
+     --color-1: #01161e;
+     --color-2: #124559;
+     ;
+     --color-3: #598392;
+     --color-4: #aec3b0;
+     --color-5: #eff6e0;
+
+ }
+
+ .navi1 {
+     display: flex;
+     justify-content: space-between;
+     background: var(--color-1);
+ }
+
+ .logo {
+
+     height: 11vw;
+     width: 13vw;
+     margin: 3vw;
+     background-image: url(../image/V%20Studio%20Logo%20WHITE.png);
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-position: center;
+     position: relative;
+ }
+
+ .mainMenu {
+
+     list-style: none;
+     height: 100vh;
+     margin: 0;
+     position: fixed;
+     top: -16px;
+     right: 0;
+     left: 0;
+     z-index: 10;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     background: var(--color-4);
+     transition: top 1s ease;
+     display: none;
+
+ }
+
+ .mainMenu li a {
+     display: inline-block;
+     padding: 15px;
+     text-decoration: none;
+     font-family: var(--primary-font);
+     text-transform: uppercase;
+     color: black;
+     font-size: 13px;
+ }
+
+ .mainMenu li a:hover {
+     background-color: #111;
+     color: white;
+     transition: 1s ease;
+
+ }
+
+ .openMenu {
+     font-size: 1.5rem;
+     margin: 20px;
+     display: block;
+     cursor: pointer;
+
+ }
+
+ .closeMenu {
+     display: block;
+     position: absolute;
+     top: 20px;
+     right: 20px;
+     font-size: 2rem;
+     cursor: pointer;
+ }
+
+ .fa-bars:before {
+
+     color: white;
+ }
+.text-main h1{
+    font-family: var(--primary-font);
+    font-size: 20px;
+}
+.text-main p{
+    font-family: var(--primary-font);
+    font-size: 15px;
+}
+.text-main{
+    padding: 4vw;
+}
+.work-template{
+    display: grid;
+  max-width: 1200px;
+  margin: auto;
+  grid-template-columns: repeat(auto-fill, minmax(148px, 2fr));
+  grid-gap: 20px;
+    margin-bottom: 2vw;
+    padding: 5vw;
+    background: var(--color2);
+}
+.works{
+    display: flex;
+    flex-direction: column;
+}
+.works-image{
+    height: 43vw;
+    width: 152px;
+    border: 1px solid black;
+}
+.works-image:hover{
+    filter: blur(3px);
+    transition: 1s ease;
+
+}
+.description{
+    margin: 1vw 3vw;
+}
+.title{
+    font-family: var(--primary-font);
+    font-size: 13px;
+     margin: 1vw 5vw;
+}
+.more-work{
+    display: flex;
+    flex-direction: column;
+
+    padding: 3vw;
+
+}
+.more-work-image{
+     height: 43vw;
+    width: 257px;
+    margin: 0 11vw;
+}
+
+.more-work-text{
+    background-color: var(--color2);
+    width: 257px;
+    padding: 5vw;
+    margin: 0 11vw;
+}
+
+.more-work-text h3 {
+    font-size: 18px;
+    font-family: var(--primary-font);
+}
+.more-work-text a{
+    font-size: 15px;
+    text-decoration: none;
+    font-family: var(--primary-font);
+    color: black;
+}
+.more-work-text a:hover{
+    color: var(--color-1);
+}
+
+
+footer{
+    background: black;
+    color:white;
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     height: 27vw;
+     margin-top: 3vw;
+}
+.footer-logo{
+     height: 11vw;
+     width: 13vw;
+     margin: 3vw;
+     background-image: url(../image/V%20Studio%20Logo%20WHITE.png);
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-position: center;
+     position: relative;
+}
+footer h1{
+    font-family: var(--primary-font);
+    font-size: 15px;
+
+}
+footer h2{
+    font-family: var(--secondary-font);
+    font-size: 9px;
+}
+.f1{
+    margin: 3vw 0;
+}
+.f2{
+    margin: 3vw 0;
+}
+
+
+
+@media only screen and (min-width: 768px){
+    .logo{
+        width: 8vw;
+        height: 6vw;
+    }
+    .fa-bars:before{
+        font-size: 45px;
+    }
+    .text-main h1{
+        font-size: 35px;
+    }
+    .text-main p{
+        font-size: 20px;
+    }
+    .work-template{
+         grid-template-columns: repeat(auto-fill, minmax(232px, 2fr));
+        grid-gap: 35px;
+    }
+    .works-image{
+        width: 336px;
+    }
+    .title{
+        font-size: 20px;
+
+    }
+    .description{
+        margin: 1vw 6vw;
+    }
+    .more-work{
+        flex-direction: row;
+    }
+    .more-work-text{
+        margin: 0px -11vw;
+    }
+    .more-work-image {
+    width: 387px;
+    margin: 0px 7vw;
+}
+    .more-work-text h3 {
+        font-size: 24px;
+    }
+    .more-work-text a {
+        font-size: 21px;
+    }
+     footer{
+        height: auto;
+    }
+    .footer-logo{
+        height: 3vw;
+        width: 4vw;
+    }
+    footer h1{
+        font-size: 15px;
+    }
+    footer h2{
+      font-size: 15px;
+    }
+    .f2{
+        margin: 3vw 28px;
+    }
+    .location{
+        font-size: 10px;
+    }
+    .fa-facebook{
+        font-size: 23px;
+    }
+    .fa-instagram{
+        font-size: 23px;
+    }
+    .fa-linkedin{
+        font-size: 23px;
+    }
+    .fa-youtube{
+        font-size: 23px;
+    }
+
+
+
+
+}
+
+@media only screen and (min-width: 1024px){
+    .logo {
+        height: 3vw;
+        width: 4vw;
+        margin: 1vw 1.5vw;
+
+    }
+
+    . .navi1 {
+        width: 10%;
+        height: auto;
+        flex-direction: row;
+        justify-content: space-between;
+        position: fixed;
+       box-shadow: 5px 5px  #e9ecef;
+
+    }
+
+    .mainMenu {
+        display: flex;
+        position: absolute;
+        flex-direction: row;
+        list-style: none;
+        height: 3.9vw;
+        width: 89%;
+        background: var(--color-1);
+        margin: 1.8vw 10.4vw;
+        align-items: flex-start;
+        justify-content: center;
+
+    }
+
+    .mainMenu li a {
+        display: inline-block;
+        padding: 15px;
+        text-decoration: none;
+        font-family: var(--primary-font);
+        text-transform: uppercase;
+        color: black;
+
+
+        color: white;
+        font-size: 15px;
+
+        position: relative;
+        top: 0.1vw;
+        right: 3vw;
+    }
+
+    .mainMenu li a:hover {
+        background-color: var(--color2);
+        color: black;
+        border-bottom: 1.5px solid black;
+        margin-bottom: .5vw;
+    }
+    .openMenu {
+    display: none;
+}
+
+.closeMenu {
+    display: none;
+}
+    .works-image {
+        height: 20vw;
+    width: 304px;
+}
+    .work-template{
+         grid-template-columns: repeat(auto-fill, minmax(257px, 2fr));
+        grid-gap: 25px;
+    }
+    .title{
+        font-size: 15px;
+    margin: 0vw -5vw;
+    }
+    .more-work-image {
+    width: 745px;
+    height: 36vw;
+    margin: 0px 9vw;
+}
+    #main{
+        padding: 0 5vw;
+         transition: 1s ease;
+    }
+
+    footer{
+        height: auto;
+    }
+    .footer-logo{
+        height: 3vw;
+        width: 4vw;
+    }
+    .fcont{
+        font-size: 18px;
+    }
+    .cont-info{
+        font-size: 10px;
+    }
+    .location{
+        font-size: 10px;
+    }
+    .fa-facebook{
+        font-size: 23px;
+    }
+    .fa-instagram{
+        font-size: 23px;
+    }
+    .fa-linkedin{
+        font-size: 23px;
+    }
+    .fa-youtube{
+        font-size: 23px;
+    }
+    .fa-palette:hover{
+        color: yellow;
+        transform: rotateX(360 deg);
+        transition: 1s ease;
+    }
+    .fa-arrow-left{
+        font-size: 30px;
+        color: black;
+        margin: 0 5vw;
+    }
+    .fa-arrow-left:hover{
+        color: var(--color-4);
+    }
+
+}

@@ -137,6 +137,7 @@
      color: black;
      margin: 3vw 39vw;
      font-size: 50px;
+     transition: 1s ease;
  }
 .fa-arrow-alt-circle-down:hover{
     color: var(--color-4);
@@ -431,23 +432,6 @@
      color: white;
  }
 
- .fa-facebook:before {
-     color: var(--color-4);
- }
-
- .fa-instagram:before {
-     color: var(--color-4);
- }
-
- .fa-linkedin:before {
-     color: var(--color-4);
- }
-
- .fa-youtube:before {
-     color: var(--color-4);
- }
-
-
  .footer-logo {
      height: 11vw;
      width: 13vw;
@@ -692,6 +676,7 @@
     }
     #main{
         padding: 0 5vw;
+         transition: 1s ease;
     }
     .work{
         background: white;
