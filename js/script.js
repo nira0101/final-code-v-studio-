@@ -49,7 +49,7 @@ function showWork(singleWork){
 }
 
 
-
+/*burger menu*/
 const mainMenu = document.querySelector(".mainMenu");
 const openMenu = document.querySelector(".openMenu");
 const closeMenu = document.querySelector(".closeMenu");
@@ -66,5 +66,9 @@ function close(){
     mainMenu.style.top = "-100%";
 }
 
-
+//image popup//
+const imgBox = document.querySelectorAll(".imgBox");
+imgBox.forEach(popUp => popUp.addEventListener("click", () => {
+    popUp.classList.toggle("active");
+}))
 

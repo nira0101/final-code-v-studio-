@@ -1,0 +1,409 @@
+ @import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Open+Sans:wght@300&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Montserrat:wght@200&family=Open+Sans:wght@300&display=swap');
+
+ * {
+     box-sizing: border-box;
+     margin: 0;
+     padding: 0;
+
+ }
+
+ :root {
+     --primary-font: 'Julius Sans One', sans-serif;
+     --secondary-font: 'Montserrat', sans-serif;
+     --color1: #FFFF00;
+     --color2: #DCDCDC;
+     --color-1: #01161e;
+     --color-2: #124559;
+
+     --color-3: #598392;
+     --color-4: #aec3b0;
+     --color-5: #eff6e0;
+
+ }
+
+ .navi1 {
+     display: flex;
+     justify-content: space-between;
+     background: var(--color-1);
+ }
+
+ .logo {
+
+     height: 11vw;
+     width: 13vw;
+     margin: 3vw;
+     background-image: url(../image/V%20Studio%20Logo%20WHITE.png);
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-position: center;
+     position: relative;
+ }
+
+ .mainMenu {
+
+     list-style: none;
+     height: 100vh;
+     margin: 0;
+     position: fixed;
+     top: -16px;
+     right: 0;
+     left: 0;
+     z-index: 10;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     background: var(--color-4);
+     transition: top 1s ease;
+     display: none;
+
+ }
+
+ .mainMenu li a {
+     display: inline-block;
+     padding: 15px;
+     text-decoration: none;
+     font-family: var(--primary-font);
+     text-transform: uppercase;
+     color: black;
+     font-size: 13px;
+ }
+
+ .mainMenu li a:hover {
+     background-color: #111;
+     color: white;
+     transition: 1s ease;
+
+ }
+
+ .openMenu {
+     font-size: 1.5rem;
+     margin: 20px;
+     display: block;
+     cursor: pointer;
+
+ }
+
+ .closeMenu {
+     display: block;
+     position: absolute;
+     top: 20px;
+     right: 20px;
+     font-size: 2rem;
+     cursor: pointer;
+ }
+
+ .fa-bars:before {
+
+     color: white;
+ }
+footer{
+    background: black;
+    color:white;
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     height: 27vw;
+     margin-top: 3vw;
+}
+.footer-logo{
+     height: 11vw;
+     width: 13vw;
+     margin: 3vw;
+     background-image: url(../image/V%20Studio%20Logo%20WHITE.png);
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-position: center;
+     position: relative;
+}
+footer h1{
+    font-family: var(--primary-font);
+    font-size: 15px;
+
+}
+footer h2{
+    font-family: var(--secondary-font);
+    font-size: 9px;
+}
+.f1{
+    margin: 3vw 0;
+}
+.f2{
+    margin: 3vw 0;
+}
+section{
+     position: relative;
+        display: grid;
+        grid-template-columns: repeat(1, 300px);
+        justify-content: center;
+        align-content: center;
+        grid-gap: 10px;
+        min-height: 100vh;
+         margin: 3vw 0;
+
+}
+.gallery{
+    padding: 4vw;
+}
+.gallery h3{
+    font-size: 20px;
+    font-family: var(--primary-font);
+
+}
+.gallery .fa-images{
+    font-size: 25px;
+
+}
+.gallery .fa-images:hover{
+    color: green;
+}
+
+
+    section .box{
+position: relative;
+    width: 300px;
+        height: 300px;
+        background-color: black;
+
+    }
+    section .box .imgBox{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: var(--color-4);
+    }
+    section .box .imgBox.active{
+         position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1000;
+        background: rgba(0, 0, 0, .8);
+    }
+  section .box .imgBox img{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      object-fit: cover;
+      background-color: white;
+        border: 1px solid black;
+    }
+    section .box .imgBox img:hover{
+        opacity: 70%;
+
+    }
+    section .box .imgBox.active img{
+        position: absolute;
+        top: 50px;
+        left: 50px;
+        right: 50px;
+        bottom: 50px;
+        width: 300px;
+    height: 300px;
+    margin-bottom: 1vw;
+
+    }
+    section .box .imgBox h2{
+        opacity: 0;
+        visibility: hidden;
+    }
+    section .box .imgBox.active h2{
+        opacity: 1;
+        visibility: visible;
+        font-size: 30px;
+        text-align: center;
+        color: white;
+    }
+    section .box .imgBox.active .fa-times{
+color: white;
+        text-align: center;
+        font-size: 30px;
+    }
+
+    section .box .imgBox .img-content{
+        position: absolute;
+        bottom: 50px;
+
+        right: 50px;
+        left: 50px;
+        visibility: hidden;
+
+        background-color: rgba(0, 0, 0, .8);
+        padding: 20px;
+        color: white;
+        transform: translateY(100%);
+
+    }
+    section .box .imgBox.active .img-content{
+        opacity: 1;
+        visibility: visible;
+        left: 13vw;
+    bottom: 103vw;
+        width: 300px;
+        transform: translateY(0);
+        transition: 0.5s;
+    }
+    section .box .imgBox.active .img-content h1{
+        font-family: var(--primary-font);
+        font-size: 18px;
+    }
+    section .box .imgBox.active .img-content p{
+         font-family: var(--primary-font);
+        font-size: 12px;
+        font-weight: 400;
+    }
+
+@media only screen and (min-width: 768px){
+    .logo{
+        width: 8vw;
+        height: 6vw;
+    }
+    .fa-bars:before{
+        font-size: 45px;
+    }
+      footer{
+        height: auto;
+    }
+    .footer-logo{
+        height: 3vw;
+        width: 4vw;
+    }
+    footer h1{
+        font-size: 15px;
+    }
+    footer h2{
+      font-size: 15px;
+    }
+    .f2{
+        margin: 3vw 28px;
+    }
+    .location{
+        font-size: 10px;
+    }
+    .fa-facebook{
+        font-size: 23px;
+    }
+    .fa-instagram{
+        font-size: 23px;
+    }
+    .fa-linkedin{
+        font-size: 23px;
+    }
+    .fa-youtube{
+        font-size: 23px;
+    }
+
+
+
+}
+
+@media only screen and (min-width: 1024px){
+    .logo {
+        height: 3vw;
+        width: 4vw;
+        margin: 1vw 1.5vw;
+
+    }
+
+    . .navi1 {
+        width: 10%;
+        height: auto;
+        flex-direction: row;
+        justify-content: space-between;
+        position: fixed;
+       box-shadow: 5px 5px  #e9ecef;
+
+    }
+
+    .mainMenu {
+        display: flex;
+        position: absolute;
+        flex-direction: row;
+        list-style: none;
+        height: 3.9vw;
+        width: 89%;
+        background: var(--color-1);
+        margin: 1.8vw 10.4vw;
+        align-items: flex-start;
+        justify-content: center;
+
+    }
+
+    .mainMenu li a {
+        display: inline-block;
+        padding: 15px;
+        text-decoration: none;
+        font-family: var(--primary-font);
+        text-transform: uppercase;
+        color: black;
+
+
+        color: white;
+        font-size: 15px;
+
+        position: relative;
+        top: 0.1vw;
+        right: 3vw;
+    }
+
+    .mainMenu li a:hover {
+        background-color: var(--color2);
+        color: black;
+        border-bottom: 1.5px solid black;
+        margin-bottom: .5vw;
+    }
+    .openMenu {
+    display: none;
+}
+
+.closeMenu {
+    display: none;
+}
+
+    body{
+        margin: 0;
+    }
+    /*lightbox gallery*/
+    section{
+        grid-template-columns: repeat(3, 300px);
+    }
+
+    section .box .imgBox.active img{
+
+        left: 360px;
+        right: 50px;
+
+        width: 500px;
+    height: 500px;
+    margin-bottom: 1vw;
+
+    }
+
+    }
+    section .box .imgBox.active .img-content{
+
+        left: 26.3vw;
+    bottom: 1vw;
+        width: 500px;
+    }
+    section .box .imgBox.active .img-content h1{
+
+        font-size: 24px;
+    }
+    section .box .imgBox.active .img-content p{
+
+        font-size: 18px;
+
+    }
+.gallery h3{
+    font-size: 30px;
+}
+.gallery {
+    padding: 2vw;
+}
+}
