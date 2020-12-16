@@ -131,6 +131,7 @@ footer h2{
 .f2{
     margin: 3vw 0;
 }
+/*gallery*/
 section{
      position: relative;
         display: grid;
@@ -258,6 +259,148 @@ color: white;
         font-weight: 400;
     }
 
+
+/*about us*/
+#main-about{
+    padding: 3vw;
+}
+#main-about .about h1{
+    font-size: 17px;
+    font-family: var(--primary-font);
+    padding: 2vw;
+}
+.about .fa-user{
+    font-size: 17px;
+}
+.about .fa-user:hover{
+    color: skyblue;
+}
+.prallex-container {
+     max-width: 960px;
+     margin: 0 auto;
+     font-size: 24px;
+    padding: 3vw;
+
+ }
+
+ .parallex-about {
+background-image: url(../image/ABOUT.jpg);
+     background-size: cover;
+     background-position:center;
+     background-repeat: no-repeat;
+     padding: 17vw;
+         height: 300px;
+ }
+.parallex-about .text{
+    display: flex;
+    margin: 7vw -7vw;
+    width: 100px;
+}
+.parallex-about .text:hover{
+    background: white;
+}
+.parallex-about h1{
+    font-family: var(--primary-font);
+    font-size: 24px;
+}
+.about-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 3vw;
+    margin: 1vw 0;
+    width: 360px;
+}
+.about-box div{
+    background: var(--color2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 1.5vw 0;
+
+}
+
+.about-box .about-box-img{
+       width: 160px;
+    height: 160px;
+    padding: 1vw;
+    margin: 1vw 22vw;
+
+}
+
+.about-box .about-box2 img{
+      border-radius: 50%;
+}
+.about-box .text{
+    width: 320px;
+    padding: 4vw;
+
+}
+.about-box div h1{
+    font-size: 18px;
+    font-family: var(--primary-font);
+}
+.about-box div h2{
+    font-size: 18px;
+    font-family: var(--primary-font);
+}
+.about-box div h3{
+      font-size: 12px;
+    font-family: var(--primary-font);
+}
+.about-box div p{
+    font-size: 13px;
+    font-family: var(--primary-font);
+}
+.about-box a{
+    text-decoration: none;
+    font-size: 15px;
+}
+.about-video{
+    margin: 1vw 2vw;
+    width: 320px;
+    padding: 3vw;
+}
+video{
+    width: 100%;
+}
+.about-connect{
+    padding: 3vw;
+    margin: 1vw 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.about-connect h1{
+    font-family: var(--primary-font);
+    font-size: 20px;
+}
+.about-connect .icons{
+    font-size: 20px;
+}
+ .about-connect .fa-facebook:hover{
+        color: var(--color-4);
+    }
+    .about-connect .fa-instagram:hover{
+         color: var(--color-4);
+    }
+    .about-connect .fa-linkedin:hover{
+         color: var(--color-4);
+    }
+    .about-connect .fa-youtube:hover{
+         color: var(--color-4);
+    }
+.about-connect h2{
+    font-family: var(--primary-font);
+    font-size: 14px;
+}
+.about-connect a{
+    text-decoration: none;
+    font-family: var(--primary-font);
+    font-size: 15px;
+    color: var(--color-4);
+}
 @media only screen and (min-width: 768px){
     .logo{
         width: 8vw;
@@ -297,7 +440,57 @@ color: white;
     .fa-youtube{
         font-size: 23px;
     }
+    /*about*/
+    .about-box{
+        width: 720px;
+    }
+    .about-box div{
+        flex-direction: row;
+    }
+    .about-box .text{
+        flex-direction: column;
+        width: 700px;
+    }
+    .about-box .about-box-img{
+        margin: 1vw 1vw;
+        width: 200px;
+        height: 200px;
+    }
+    .about-box div h1{
+        font-size: 24px;
+    }
+     .about-box div p{
+        font-size: 18px;
+    }
+    .about-box div h3{
+        font-size: 18px;
+    }
+    .about-box div a{
+      font-size: 18px;
+        font-family: var(--primar-font);
+    }
+    .about-video{
+        width: 700px;
+    }
+    .about-connect h1{
+        font-size: 25px;
+    }
+    .about-connect .icons{
+                font-size: 25px;
+    }
 
+    .about-connect h2{
+        font-size: 22px;
+    }
+    .about-connect a{
+        font-size: 22px;
+    }
+    .about h1{
+        font-size: 27px;
+    }
+    .about .fa-user{
+        font-size: 27px;
+    }
 
 
 }
@@ -351,11 +544,16 @@ color: white;
         right: 3vw;
     }
 
-    .mainMenu li a:hover {
+    li a:hover:not(.active){
         background-color: var(--color2);
         color: black;
         border-bottom: 1.5px solid black;
         margin-bottom: .5vw;
+    }
+
+    li a.active{
+        background-color: var(--color-4);
+        color: black;
     }
     .openMenu {
     display: none;
@@ -384,7 +582,7 @@ color: white;
 
     }
 
-    }
+
     section .box .imgBox.active .img-content{
 
         left: 26.3vw;
@@ -406,4 +604,133 @@ color: white;
 .gallery {
     padding: 2vw;
 }
+
+    /*about*/
+    #main-about{
+        padding: 1vw;
+    }
+
+    #main-about .about h1{
+        font-size: 30px;
+    }
+    .about .fa-user{
+        font-size: 30px;
+    }
+
+    .parallex-about{
+        background-attachment: fixed;
+        height: 450px;
+        object-fit: cover;
+        box-shadow: 1px solid black;
+        border: 1px solid black;
+    }
+    .parallex-about h1{
+        font-size: 40px;
+        font-weight: bolder;
+
+    }
+    .parallex-about .text{
+        margin: -3vw -7vw;
+    width: 600px;
+
+    }
+     .about-box{
+        width: 100%;
+         padding: 8vw;
+         margin: -6vw 0;
+    }
+    .about-box div{
+        flex-direction: row;
+    }
+    .about-box .about-box1 img{
+        width: 200px;
+        height: 200px;
+    }
+     .about-box .about-box2 img{
+       border-radius: 0%;
+    }
+
+    .about-box .text{
+        flex-direction: column;
+        width: 100%;
+    }
+    .about-box .about-box-img{
+        margin: 1vw 1vw;
+        width: 500px;
+        height: 500px;
+
+    }
+    .about-box div h1{
+        font-size: 24px;
+    }
+     .about-box div p{
+        font-size: 18px;
+         font-family: var(--secondary-font);
+         font-weight: 480;
+    }
+    .about-box div h3{
+        font-size: 18px;
+    }
+    .about-box div a{
+      font-size: 28px;
+        font-family: var(--primar-font);
+        text-align: center;
+        margin: 1vw 6vw;
+    }
+    .about-video{
+        width: 1000px;
+        margin-right: 7vw;
+
+
+    }
+    video{
+        margin: -5.5vw 11vw;
+           border: 1px solid black;
+    }
+    .about-connect{
+        margin: 2vw 0;
+    }
+    .about-connect h1{
+        font-size: 25px;
+    }
+    .about-connect .icons{
+            font-size: 50px;
+    }
+
+    .about-connect h2{
+        font-size: 22px;
+    }
+    .about-connect a{
+        font-size: 22px;
+        color: var(--colo1);
+    }
+    .about-connect .fa-facebook{
+        font-size: 50px;
+    }
+    .about-connect .fa-instagram{
+        font-size: 50px;
+    }
+    .about-connect .fa-linkedin{
+        font-size: 50px;
+    }
+    .about-connect .fa-youtube{
+        font-size: 50px;
+    }
+    footer{
+        margin: -4vw 0;
+        height: 20vw;
+      background-color: var(--color-1);
+        align-items: center;
+    }
+    footer h1,h2{
+        margin: 1.5vw;
+    }
+    .footer-logo{
+        height: 6vw;
+        width: 7vw;
+    }
+
+
+
 }
+

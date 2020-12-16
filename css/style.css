@@ -69,6 +69,7 @@
      font-size: 13px;
  }
 
+
  .mainMenu li a:hover {
      background-color: #111;
      color: white;
@@ -239,10 +240,7 @@
      font-family: var(--secondary-font);
  }
 
- .fa-arrow-circle-right {
-     color: var(--color-1);
-     font-size: 20px;
- }
+
 
  /*shop-now*/
  .shop-now {
@@ -544,6 +542,8 @@
 
 }
 @media only screen and (min-width: 1024px){
+
+
     .logo {
         height: 3vw;
         width: 4vw;
@@ -592,11 +592,16 @@
         right: 3vw;
     }
 
-    .mainMenu li a:hover {
+  li a:hover:not(.active){
         background-color: var(--color2);
         color: black;
         border-bottom: 1.5px solid black;
         margin-bottom: .5vw;
+    }
+
+    li a.active{
+        background-color: var(--color-4);
+        color: black;
     }
     .openMenu {
     display: none;
@@ -643,81 +648,116 @@
     .text2 p{
         font-size: 15.5px;
     }
-    .work-image{
-        height: 20vw;
-        width: 300px;
-        margin: 2vw 8vw;
-    }
+
     .section1{
         padding: 5vw;
             background:#e9ecef;
+
     }
-    .box1{
-        background: white;
+
+    /*work*/
+    .work-grid{
+        margin: 0vw 15vw;
+    }
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(2, 400px);
+        grid-gap: 20px;
+    }
+    .grid .grid-img{
+        width: 100%;
+        height: 300px;
         border: 1px solid black;
-        display: flex;
-        flex-direction: column;
-        box-shadow: 5px 5px  #e9ecef;
     }
-    .box1 a{
+    .grid1 .grid-img{
+        background-image: url(../image/drawingSketch18.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .grid2 .grid-img{
+        background-image: url(../image/drawingSketch2.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+    }
+    .work-grid h1{
+        font-family: var(--primary-font);
+        font-size: 20px;
+        margin:1vw;
+    }
+    .grid h1{
+        font-family: var(--primary-font);
+        font-size: 20px;
+    }
+    .grid p{
+        font-family: var(--primary-font);
+        font-size: 15px;
+    }
+    .grid-text{
+        padding: 3vw;
+        background: #e9ecef;
+    }
+
+    ..grid-text .grid-a{
+        font-family: var(--secondary-font);
+        font-size: 15px;
         text-decoration: none;
     }
-    .box2{
-        background: white;
-         border: 1px solid black;
-        flex-direction: column;
-        box-shadow: 5px 5px  lightgray;
-    }
-    .work-text:hover{
-        background-color: #e9ecef;
-    }
-     .box2 a{
-        text-decoration: none;
+   .grid-a:hover{
+        color: var(--color-1);
     }
     #main{
         padding: 0 5vw;
          transition: 1s ease;
+
     }
-    .work{
-        background: white;
-    }
-    .work-text h1{
-font-size: 26px;}
-    .work-box{
-        padding: 4vw;
-    }
+
     .shop-image{
         height: 30vw;
         width: 500px;
     }
     .shop-now{
         background: #e9ecef;
-        margin: 1vw 0;
+        margin: 1vw 10vw;
+        width: 80%;
+        padding: 2vw;
 
     }
     .shop-container{
-        flex-direction: row;
+        display: grid;
+        grid-template-columns: repeat(2, 400px);
+        padding: 1vw;
+        justify-content:center;
+
+
     }
-    .shop-text h1{
-        font-size: 24px;
+    .shop-img{
+        width: 100%;
+        height:300px;
+        background-image: url(../image/dolores.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
     }
-    .shop-text p{
-        font-size: 15px;
-    }
+
     .shop-text{
-        width: 550px;
-        margin: 3vw 1vw;
+        width: 100%;
+        margin: 0vw 0w;
         background: white;
         padding: 2vw;
+
     }
     .button-shop{
         height: auto;
-        width: 7vw;
+        width: 5vw;
         margin: .5vw 1.5vw;
     }
     .button-shop a{
         margin: 0 -0.5vw;
         cursor: pointer;
+        font-size: 14px;
     }
     .button-shop:hover{
         background: black;
@@ -728,13 +768,13 @@ font-size: 26px;}
         color: white;
     }
     .shop-now h1{
-        font-size: 24px;
+        font-size: 20px;
         margin: 0.5vw 0;
     }
      .shop-now p{
-        font-size: 16px;
+        font-size: 14px;
         margin: .0 0;
-         font-family: var(--primary-font);
+         font-family: var(--secondary-font);
     }
     .blog{
         background:#e9ecef;
@@ -747,8 +787,6 @@ font-size: 26px;}
     }
     .blog-image{
         height: 20vw;
-        border-radius: 50%;
-
     }
     .blog div{
         background-color:#e9ecef;
@@ -757,18 +795,47 @@ font-size: 26px;}
         background-color: white;
     }
     .blog-text{
-        border: 3px solid white;
+
+        padding: 2vw;
+        border: 1px solid black;
     }
     button{
         margin-top: -2vw;
     }
+    .blog-text h2{
+        font-size: 25px;
+    }
+    .blog-text h3{
+        font-size: 13px;
+        margin-bottom: 1vw;
+    }
+     .blog1 .blog-text p{
+       font-style: italic;
+    }
+    .blog-content a{
+        font-size: 13px;
+        text-decoration: none;
+        color: var(--color4);
+        font-family: var(--primary-font);
+        margin-top: 2vw;
+    }
+    .blog-content a:hover{
+        color: var(--color-3);
+    }
     footer{
-        height: auto;
+        margin: -4vw 0;
+        height: 20vw;
+      background-color: var(--color-1);
+        align-items: center;
+    }
+    footer h1,h2{
+        margin: 1.5vw;
     }
     .footer-logo{
-        height: 3vw;
-        width: 4vw;
+        height: 6vw;
+        width: 7vw;
     }
+
     .fcont{
         font-size: 18px;
     }

@@ -341,11 +341,16 @@ footer h2{
         right: 3vw;
     }
 
-    .mainMenu li a:hover {
+    li a:hover:not(.active){
         background-color: var(--color2);
         color: black;
         border-bottom: 1.5px solid black;
         margin-bottom: .5vw;
+    }
+
+    li a.active{
+        background-color: var(--color-4);
+        color: black;
     }
     .openMenu {
     display: none;
