@@ -569,6 +569,7 @@ video{
     /*lightbox gallery*/
     section{
         grid-template-columns: repeat(3, 300px);
+        margin-bottom: 6vw;
     }
 
     section .box .imgBox.active img{

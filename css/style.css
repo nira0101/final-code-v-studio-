@@ -184,63 +184,58 @@
  }
 
  /*work*/
- .work {
-     background: var(--color2);
-     padding: 2vw;
-     font-family: var(--primary-font);
- }
+  .work-grid{
+        margin: 0vw 15vw;
+    }
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(1, 300px);
+        grid-gap: 20px;
+    }
+    .grid .grid-img{
+        width: 100%;
+        height: 300px;
+        border: 1px solid black;
+    }
+    .grid1 .grid-img{
+        background-image: url(../image/drawingSketch18.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .grid2 .grid-img{
+        background-image: url(../image/drawingSketch2.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
 
- .work h1 {
-     font-size: 20px;
+    }
+    .work-grid h1{
+        font-family: var(--primary-font);
+        font-size: 20px;
+        margin:1vw;
+    }
+    .grid h1{
+        font-family: var(--primary-font);
+        font-size: 20px;
+    }
+    .grid p{
+        font-family: var(--primary-font);
+        font-size: 15px;
+    }
+    .grid-text{
+        padding: 3vw;
+        background: #e9ecef;
+    }
 
- }
-
- .work-image {
-     width: 18vw;
-     height: 16vw;
-     margin: 9vw 0;
- }
-
- .work-box {
-     display: flex;
-     flex-direction: column;
-     justify-content: space-between;
-     padding: 9px;
- }
-
- .box1 {
-     display: flex;
-     flex-direction: row;
-     justify-content: space-between;
-
-     margin: 2vw 0;
-     background: var(--color-5);
- }
-
- .box2 {
-     display: flex;
-     flex-direction: row;
-     justify-content: space-between;
-
-     margin: 2vw 0;
-     background: var(--color-5);
- }
-
- .work-text {
-     padding: 5vw;
- }
-
- .work-text h1 {
-     font-size: 18px;
-
- }
-
- .work-text p {
-     font-size: 15px;
-     font-family: var(--secondary-font);
- }
-
-
+    ..grid-text .grid-a{
+        font-family: var(--secondary-font);
+        font-size: 15px;
+        text-decoration: none;
+    }
+   .grid-a:hover{
+        color: var(--color-1);
+    }
 
  /*shop-now*/
  .shop-now {
@@ -261,6 +256,7 @@
      margin: 1vw;
  }
 .shop-now p{
+    font-family: var(--secondary-font);
         font-size: 13px;
         margin: .0 0;
     }
@@ -272,10 +268,14 @@
      padding: 5vw;
  }
 
- .shop-image {
-     height: 55vw;
-
- }
+ .shop-img{
+        width: 100%;
+        height:300px;
+        background-image: url(../image/dolores.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
 
  .shop-text h1 {
      font-size: 20px;
@@ -664,50 +664,7 @@
         grid-template-columns: repeat(2, 400px);
         grid-gap: 20px;
     }
-    .grid .grid-img{
-        width: 100%;
-        height: 300px;
-        border: 1px solid black;
-    }
-    .grid1 .grid-img{
-        background-image: url(../image/drawingSketch18.jpg);
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
-    .grid2 .grid-img{
-        background-image: url(../image/drawingSketch2.jpg);
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
 
-    }
-    .work-grid h1{
-        font-family: var(--primary-font);
-        font-size: 20px;
-        margin:1vw;
-    }
-    .grid h1{
-        font-family: var(--primary-font);
-        font-size: 20px;
-    }
-    .grid p{
-        font-family: var(--primary-font);
-        font-size: 15px;
-    }
-    .grid-text{
-        padding: 3vw;
-        background: #e9ecef;
-    }
-
-    ..grid-text .grid-a{
-        font-family: var(--secondary-font);
-        font-size: 15px;
-        text-decoration: none;
-    }
-   .grid-a:hover{
-        color: var(--color-1);
-    }
     #main{
         padding: 0 5vw;
          transition: 1s ease;
