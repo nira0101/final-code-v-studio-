@@ -401,6 +401,136 @@ video{
     font-size: 15px;
     color: var(--color-4);
 }
+
+
+/*connect*/
+.connect h1{
+    font-size:20px;
+    font-family: var(--primary-font);
+    margin: 1.5vw;
+}
+.fa-link{
+    font-size: 20px;
+}
+.connect-box{
+    margin: 2vw 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+
+}
+.connect-img{
+    width: 300px;
+    height: 300px;
+    background-image: url(../image/Andreea%20Vlad_in%20studio_3.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.connect-text{
+    padding: 2vw;
+    background: #e9ecef;
+    width: 300px;
+}
+.connect-box h1{
+    font-size: 18px;
+    font-family: var(--primary-font);
+}
+.connect-box p{
+     font-size: 14px;
+    font-family: var(--secondary-font);
+}
+.connect-box-button{
+    border: none;
+    outline: none;
+    border: 1px solid black;
+    background: black;
+    color: white;
+    font-family: var(--primary-font);
+    font-size: 13px;
+    padding: 9px;
+    margin: 2vw ;
+}
+
+.connect-form{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.connect-form h3{
+    font-size: 15px;
+    font-family: var(--primary-font);
+    padding: 2vw;
+    margin: 1vw;
+}
+.form-group{
+    width: 100%;
+    margin-top: 20px;
+    font-size: 15px;
+    font-family: var(--primary-font);
+}
+.form-group input,
+.form-group textarea{
+    width: 100%;
+    padding: 10px;
+    font-size: 12px;
+}
+textarea{
+    resize: vertical;
+}
+.connect-form button[type="submit"]{
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: center;
+    font-family: var(--primary-font);
+    color: white;
+    background-color: black;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 10px;
+}
+.connect-form button[type="submit"]:hover{
+    background: rgba(0, 0, 0, 0, 0.8);
+}
+.connect-some{
+    width: 300px;
+    min-height: auto;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin: 5vw 10vw;
+}
+.some-text{
+    text-align: center;
+}
+.some-text h1{
+    font-family: var(--primary-font);
+    font-size: 18px;
+}
+.some{
+    display: grid;
+    grid-template-columns: repeat(2, 150px);
+    grid-gap: 6px;
+    margin: 1vw 10vw;
+}
+.some .fa-facebook{
+    font-size: 70px;
+}
+.some .fa-instagram{
+    font-size: 70px;
+}
+.some .fa-youtube{
+    font-size: 70px;
+}
+.some .fa-linkedin{
+    font-size: 70px;
+}
+.some .fa:hover{
+    background: var(--color2);
+}
 @media only screen and (min-width: 768px){
     .logo{
         width: 8vw;
@@ -491,6 +621,30 @@ video{
     .about .fa-user{
         font-size: 27px;
     }
+    /*connect*/
+    .connect-img{
+        width: 500px;
+        height: 500px;
+    }
+    .connect-text{
+        width: 500px;
+    }
+    .connect-text h1{
+        font-size: 20px
+    }
+    .connect-text p{
+        font-size: 15px;
+    }
+    .connect-form h3{
+        font-size: 20px;
+    }
+    form{
+        width: 500px;
+    }
+    .connect-some{
+        margin: 6vw 27vw;
+    }
+
 
 
 }
@@ -718,7 +872,7 @@ video{
         font-size: 50px;
     }
     footer{
-        margin: -4vw 0;
+        margin: -1vw 0;
         height: 20vw;
       background-color: var(--color-1);
         align-items: center;
@@ -730,7 +884,60 @@ video{
         height: 6vw;
         width: 7vw;
     }
+/*connect*/
+     .connect-img{
+       height: 400px;
+         width: 900px;
 
+    }
+    .connect-text{
+        width: 900px;
+    }
+    .connect-text h1{
+        font-size: 22px
+    }
+    .connect-text p{
+        font-size: 16px;
+    }
+    .connect-form h3{
+        font-size: 22px;
+    }
+    form{
+        width: 804px;
+
+    }
+    .connect-some{
+        margin: 2vw 38vw;
+        display: flex;
+        flex-direction: column;
+    }
+    .some-text h1{
+        margin: 1vw 6vw;
+    }
+    .some .fa-facebook:hover{
+        color: #e9ecef;
+    }
+    .some .fa-instagram:hover{
+        color: #e9ecef;
+    }
+    .some .fa-youtube:hover{
+        color: #e9ecef;
+    }
+    .some .fa-linkedin:hover{
+        color: #e9ecef;
+    }
+    .some{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
+    .connect-box-button{
+        margin: 1vw 0;
+    }
+    .fa-link:hover{
+       color: lightskyblue;
+    }
 
 
 }

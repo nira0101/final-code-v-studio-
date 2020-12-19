@@ -677,8 +677,8 @@
     }
     .shop-now{
         background: #e9ecef;
-        margin: 1vw 10vw;
-        width: 80%;
+        margin: 1vw 15vw;
+        width: 67.5%;
         padding: 2vw;
 
     }
@@ -780,7 +780,7 @@
         color: var(--color-3);
     }
     footer{
-        margin: -4vw 0;
+        margin: -1vw 0;
         height: 20vw;
       background-color: var(--color-1);
         align-items: center;
@@ -791,28 +791,29 @@
     .footer-logo{
         height: 6vw;
         width: 7vw;
+        margin: 0vw 6vw;
     }
 
     .fcont{
-        font-size: 18px;
+        font-size: 20px;
     }
     .cont-info{
-        font-size: 10px;
+        font-size: 12px;
     }
     .location{
-        font-size: 10px;
+        font-size: 12px;
     }
     .fa-facebook{
-        font-size: 23px;
+        font-size: 25px;
     }
     .fa-instagram{
-        font-size: 23px;
+        font-size: 25px;
     }
     .fa-linkedin{
-        font-size: 23px;
+        font-size: 25px;
     }
     .fa-youtube{
-        font-size: 23px;
+        font-size: 25px;
     }
 
 }
