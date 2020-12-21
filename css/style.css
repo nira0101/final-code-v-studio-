@@ -12,6 +12,7 @@
      --primary-font: 'Julius Sans One', sans-serif;
      --secondary-font: 'Montserrat', sans-serif;
      --color2: #DCDCDC;
+     --color-1: #01161e;
      --color-2: #124559;
      --color-3: #598392;
      --color-4: #aec3b0;
@@ -448,6 +449,25 @@
      background-position: center;
      position: relative;
  }
+ .fa-facebook {
+         font-size: 28px;
+         color: var(--color2);
+     }
+
+     .fa-instagram {
+         font-size: 28px;
+         color: var(--color2);
+     }
+
+     .fa-linkedin {
+         font-size: 28px;
+         color: var(--color2);
+     }
+
+     .fa-youtube {
+         font-size: 28px;
+         color: var(--color2);
+     }
 
  @media only screen and (min-width: 768px) {
      .logo {
@@ -898,24 +918,6 @@
          font-size: 12px;
      }
 
-     .fa-facebook {
-         font-size: 28px;
-         color: var(--color2);
-     }
 
-     .fa-instagram {
-         font-size: 28px;
-         color: var(--color2);
-     }
-
-     .fa-linkedin {
-         font-size: 28px;
-         color: var(--color2);
-     }
-
-     .fa-youtube {
-         font-size: 28px;
-         color: var(--color2);
-     }
 
  }

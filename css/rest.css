@@ -601,6 +601,29 @@
  .some .fa:hover {
      background: var(--color2);
  }
+  .f2 .fa-link:hover {
+         color: lightskyblue;
+     }
+
+     .f2 .fa-facebook {
+         font-size: 28px;
+         color: var(--color2);
+     }
+
+     .f2 .fa-instagram {
+         font-size: 28px;
+         color: var(--color2);
+     }
+
+     .f2 .fa-linkedin {
+         font-size: 28px;
+         color: var(--color2);
+     }
+
+     .f2 .fa-youtube {
+         font-size: 28px;
+         color: var(--color2);
+     }
 
  @media only screen and (min-width: 768px) {
      .logo {
@@ -1086,29 +1109,7 @@
          margin: 1vw 0;
      }
 
-     .f2 .fa-link:hover {
-         color: lightskyblue;
-     }
 
-     .f2 .fa-facebook {
-         font-size: 28px;
-         color: var(--color2);
-     }
-
-     .f2 .fa-instagram {
-         font-size: 28px;
-         color: var(--color2);
-     }
-
-     .f2 .fa-linkedin {
-         font-size: 28px;
-         color: var(--color2);
-     }
-
-     .f2 .fa-youtube {
-         font-size: 28px;
-         color: var(--color2);
-     }
 
 
 
